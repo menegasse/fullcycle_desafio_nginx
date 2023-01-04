@@ -14,24 +14,4 @@
 >
 > \- A linguagem de programação para este desafio é Node/JavaScript.
 
-# Configurando o projeto
-
-Instalando as dependências da aplicação
-
-```bash
-make install-app
-```
-
-Criar o Schema do Banco de Dados.
-
-```bash
-make db-create-table
-```
-
-# Iniciando o projeto
-
-```bash
-make run-local
-```
-
-Se tudo estiver rodando corretamente ao entrar no link http://localhost:8080 devera adicionar um novo nome a lista.
+Se tudo estiver rodando corretamente ao entrar no link http://localhost:8080 devera adicionar um novo nome aleatório a lista, o mesmo acontecerá se atualizar a página.

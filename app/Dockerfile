@@ -2,6 +2,12 @@ FROM node:15
 
 WORKDIR /usr/src/app
 
+RUN npm init -y && \
+    npm install express --save && \
+    npm install @faker-js/faker --save-dev && \
+    npm install moment --save && \
+    npm install mysql
+
 RUN apt-get update && apt-get install -y wget
 
 ENV DOCKERIZE_VERSION v0.6.1

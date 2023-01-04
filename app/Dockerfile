@@ -2,11 +2,11 @@ FROM node:15
 
 WORKDIR /usr/src/app
 
-RUN npm init -y && \
-    npm install express --save && \
-    npm install @faker-js/faker --save-dev && \
-    npm install moment --save && \
-    npm install mysql
+COPY ./package*.json /usr/src/app
+
+RUN npm install
+
+COPY . /usr/src/app
 
 RUN apt-get update && apt-get install -y wget
 
